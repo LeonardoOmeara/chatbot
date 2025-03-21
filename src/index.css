@@ -1,0 +1,105 @@
+/*Importamos las fuentes de google fonts - open sans*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
+* {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+    background: linear-gradient( white, #ababca);
+    min-height: 100vh;
+}
+
+.chatbot-popup{
+    width: 420px;
+    background: white;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.chatbot-popup .chat-header{
+    display: flex;
+    padding: 15px 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(136, 126, 244);
+}
+
+.chat-header .header-info{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.header-info svg {
+    padding: 6px;
+    fill: rgb(136, 126, 244);
+    background-color: white;
+    border-radius: 15px;
+    flex-shrink: 0;
+}
+
+.header-info .logo-text {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.chat-header button{
+    height: 40px;
+    width: 40px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1.9rem;
+    cursor: pointer;
+    border-radius: 50%;
+    background: none;
+    transition: 0.2s ease;
+
+}
+
+.chat-header button:hover{
+    background: rgb(255, 111, 111);
+}
+
+.chat-body{
+    padding: 25px;
+    height: 460px;   
+}
+
+.chat-body .message{
+
+    display: flex;
+    gap: 11px;
+    align-items: center;
+}
+
+.chat-body .bot-message svg{
+    padding: 6px;
+    fill: white;
+    height: 35px;
+    width: 35px;
+    background-color: rgb(74, 113, 220);
+    border-radius: 50%;
+    flex-shrink: 0;
+    align-self: flex-end;
+}
+
+.chat-body .message .message-text{
+    background-color: #f6f2ff;
+    border-radius: 13px 13px 13px 3px;
+}
+
+.chat-body .bot-message .message-text{
+    
+}
